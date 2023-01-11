@@ -1,0 +1,10 @@
+*.o
+*.hi
+*~
+dist
+dist-newstyle
+*.js_hi
+*.js_o
+.ghc.environment.*
+*.jsexe
+

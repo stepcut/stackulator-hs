@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+    <script language="javascript" src="pace.js"></script>
+    <link href="loading.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script>
+    jQuery.getScript("/rts.js", function () {
+      jQuery.getScript("/lib.js", function () {
+       jQuery.getScript("/out.js", function () {
+        jQuery.getScript("/runmain.js", function () {
+        });
+       });
+      });
+    });
+  </script>
+
+</html>
